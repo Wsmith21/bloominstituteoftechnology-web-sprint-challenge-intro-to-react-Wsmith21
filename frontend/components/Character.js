@@ -13,7 +13,7 @@ const Character = ({ data }) => {
 
   return (
     <div className="character-card" onClick={togglePlanetInfo}>
-      <h3>{data.name}</h3>
+      <h3 className="character-name">{data.name}</h3>
       {showPlanetInfo && <Planet planet={data.homeworld} />} {/* Render the Planet component */}
     </div>
   );
